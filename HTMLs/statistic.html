@@ -5,153 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - About Hong Kong </title>
-    <link rel="stylesheet" href="../CSS/nav.css">
-    <link rel="stylesheet" href="../CSS/general.css">
-    <link rel="stylesheet" href="../CSS/about.css"> <!--Change the name of this file-->
-    <link rel="stylesheet" href="../CSS/referenceSection.css"> 
 
-    <style>
+    <!--General css  files-->
+    <link rel="stylesheet" href="../CSS/GeneralWebStructure/nav.css">
+    <link rel="stylesheet" href="../CSS/GeneralWebStructure/general.css">
+    <link rel="stylesheet" href="../CSS/GeneralWebStructure/textBasedStruture.css">
+    <link rel="stylesheet" href="../CSS/GeneralWebStructure/referenceSection.css"> 
 
-        h4, ol{
-            margin:0;
-        }
-
-       
-
-        #regionAndDistrictContainer{
-            
-           display:grid;
-           grid-template: 
-                "region1 region2 region3" auto
-                "district1 district2 district3" auto
-                /1fr 1fr 1fr;
-           column-gap:10px;
-           row-gap:5px
-        }
-       
-        #regionAndDistrictContainer h4{
-            text-align: center;
-        }
-
-        .region{
-            padding-top:3px;
-            padding-bottom:3px;
-            background-color: rgb(194, 137, 31);
-            
-        }
-
-        .districtContainer{
-            background-color: rgb(214, 214, 214);
-            padding:10px
-
-        }
-
-        #region1{grid-area:region1; }
-        #region2{grid-area:region2; }
-        #region3{grid-area:region3; }
-
-        #district1{grid-area:district1}
-        #district2{grid-area:district2}
-        #district3{grid-area:district3}
-       
-        #SeasonContainer{
-            display:grid;
-            grid-template-columns:repeat(2, 1fr);
-            row-gap:50px;
-            margin:20px;
-            
-            padding:10px;
-        }
-       
-        .season{
-            display:flex
-        }
-
-        .season img{
-            width: 40%;
-            border-top-left-radius:50px;
-            object-fit: cover;
-        }
-
-        .season div{
-            margin-left:30px
-        }
-
-        .season div ul{
-            padding:0;
-            margin:0;
-            list-style-type:disc
-        }
-
-        .season div h3{
-            padding:0;
-            margin:0;
-        }
-
-        td{
-            background-color: rgb(232, 232, 232);
-        }
-
-        #population{
-            width: 100%;
-            margin-bottom:30px
-        }
-
-        #population th, #population td{
-           border-bottom:1px solid black
-        }
-
-        #population th{
-            background-color: rgb(207, 207, 207);
-        }
-
-        #population{
-            border-spacing:0
-        }
-
-        #population th{
-            text-align: start;
-           
-          
-        }
-
-        #population td{
-            text-align: center;
-            
-        }
-
-
-        #LargestDistricts, #LargestDistricts th, #LargestDistricts td{
-           
-            text-align: center;
-        }
-
-        #LargestDistricts{
-            width: 100%;
-            border-spacing:0;
-            margin-bottom:30px
-        }
-
-        .tableTitle{
-            background-color: rgb(230, 165, 45);;
-        }
-
-        .dataHeading{
-            background-color:  rgb(207, 207, 207);
-            
-        }
-
-        .sec{
-            border-left:1px solid black
-        }
-
-        #LargestDistricts td{
-            border-bottom:1px solid black
-        }
-
-        
-
-    </style>
+    <!--Specific css  files-->
+    <link rel="stylesheet" href="../CSS/WebSpecific/statistic.css">
 </head>
 
 <body>
@@ -181,46 +43,18 @@
 
     </nav>
 
-    <div id="pageTitleBox">
-        <h1>About Hong Kong</h1>
-        <input id="searchBox" type="text" placeholder="Search">
-    </div>
-
-
-    <aside id="aboutAside">
-        <div id="title">
-            table of content
-        </div>
-        <ul>
-            <li>
-                <a href="#introduction">Introduction</a>
-            </li>
-            <li>
-                <a href="#economy">Economy</a>
-            </li>
-            <li>
-                <a href="#culture">Culture</a>
-            </li>
-            <li>
-                <a href="#polictics">Politics</a>
-            </li>
-            <li>
-                <a href="#environment">Environment</a>
-            </li>
-            <li>
-                <a href="#history">History</a>
-            </li>
-        </ul>
-    </aside>
-
+    
+    <h1>About Hong Kong</h1>
+    
+  
 
     <main>
-        <button id="TableOfContent">Table of content</button>
+    
         <h2>Geography</h2>
         
         <h3>Regions and districts </h3> 
         <div id = "regionAndDistrictContainer"> 
-
+            <!--Change this to responsive design-->
             <h4 class = "region" id = "region1">New Territories</h4>   
             <div class = "districtContainer" id = "district1">
                 <ol>

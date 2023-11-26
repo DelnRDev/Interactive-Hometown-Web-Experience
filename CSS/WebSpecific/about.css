@@ -1,7 +1,32 @@
-/* General */
-body{
-    
+
+
+/* table of content button*/
+#TableOfContent{
+    width: 100%;
+    background-color:rgb(196, 196, 196);
+    border:1px solid rgb(95, 95, 95);
+    box-shadow: 1px 1px 1px black;
+    height: 35px;
+    margin-top:5px;
+    cursor:pointer
 }
+
+#TableOfContent:hover{
+    background-color:rgb(169, 169, 169);
+}
+/*Image block of text */
+.descImg{
+    width: 100%;
+    aspect-ratio: 2/1.3;
+    background-color: rgba(0,0,0,.2);
+    object-fit: cover;
+    display: block;
+
+    margin-right:auto ;
+    margin-left:auto;
+}
+/* END */
+
 
 /* side Nav */
 #aboutAside #title{
@@ -35,64 +60,7 @@ body{
     text-decoration: underline;
 }
 
-/* Title Section*/
-#pageTitleBox{
-   
-
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-}
-
-
-#searchBox{
-    width: 90%;
-    margin-bottom:10px;
-    height: 20px;
-    border-radius:15px;
-    padding-left: 10px;
-    border:2px solid rgb(71, 71, 71);
-}
-
-/* table of content button*/
-#TableOfContent{
-    width: 100%;
-    background-color:rgb(196, 196, 196);
-    border:1px solid rgb(95, 95, 95);
-    box-shadow: 1px 1px 1px black;
-    height: 35px;
-    margin-top:5px;
-    cursor:pointer
-}
-
-#TableOfContent:hover{
-    background-color:rgb(169, 169, 169);
-}
-
-/*Main content section */
-main{
-    padding: 5px 20px;
-    width: 85%;
-    margin-left:auto;
-    margin-right:auto;
-    background-color: rgb(234, 234, 234);
-    border-radius:5px;
-}
-
-
-
-.descImg{
-    width: 100%;
-    aspect-ratio: 2/1.3;
-    background-color: rgba(0,0,0,.2);
-    object-fit: cover;
-    display: block;
-
-    margin-right:auto ;
-    margin-left:auto;
-}
-/* END */
-
+/* Responsive design*/
 @media only screen and (min-width:600px){
    
 

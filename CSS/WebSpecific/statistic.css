@@ -1,0 +1,136 @@
+h4, ol{
+    margin:0;
+}
+
+
+
+#regionAndDistrictContainer{
+    
+   display:grid;
+   grid-template: 
+        "region1 region2 region3" auto
+        "district1 district2 district3" auto
+        /1fr 1fr 1fr;
+   column-gap:10px;
+   row-gap:5px
+}
+
+#regionAndDistrictContainer h4{
+    text-align: center;
+}
+
+.region{
+    padding-top:3px;
+    padding-bottom:3px;
+    background-color: rgb(194, 137, 31);
+    
+}
+
+.districtContainer{
+    background-color: rgb(214, 214, 214);
+    padding:10px
+
+}
+
+#region1{grid-area:region1; }
+#region2{grid-area:region2; }
+#region3{grid-area:region3; }
+
+#district1{grid-area:district1}
+#district2{grid-area:district2}
+#district3{grid-area:district3}
+
+#SeasonContainer{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    row-gap:50px;
+    margin:20px;
+    
+    padding:10px;
+}
+
+.season{
+    display:flex
+}
+
+.season img{
+    width: 40%;
+    border-top-left-radius:50px;
+    object-fit: cover;
+}
+
+.season div{
+    margin-left:30px
+}
+
+.season div ul{
+    padding:0;
+    margin:0;
+    list-style-type:disc
+}
+
+.season div h3{
+    padding:0;
+    margin:0;
+}
+
+td{
+    background-color: rgb(232, 232, 232);
+}
+
+#population{
+    width: 100%;
+    margin-bottom:30px
+}
+
+#population th, #population td{
+   border-bottom:1px solid black
+}
+
+#population th{
+    background-color: rgb(207, 207, 207);
+}
+
+#population{
+    border-spacing:0
+}
+
+#population th{
+    text-align: start;
+   
+  
+}
+
+#population td{
+    text-align: center;
+    
+}
+
+
+#LargestDistricts, #LargestDistricts th, #LargestDistricts td{
+   
+    text-align: center;
+}
+
+#LargestDistricts{
+    width: 100%;
+    border-spacing:0;
+    margin-bottom:30px
+}
+
+.tableTitle{
+    background-color: rgb(230, 165, 45);;
+}
+
+.dataHeading{
+    background-color:  rgb(207, 207, 207);
+    
+}
+
+.sec{
+    border-left:1px solid black
+}
+
+#LargestDistricts td{
+    border-bottom:1px solid black
+}
