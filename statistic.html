@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - About Hong Kong </title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="referenceSection.css">
+
+    <style>
+
+        h4, ol{
+            margin:0;
+        }
+
+       
+
+        #regionAndDistrictContainer{
+            
+           display:grid;
+           grid-template: 
+                "region1 region2 region3" auto
+                "district1 district2 district3" auto
+                /1fr 1fr 1fr;
+           column-gap:10px;
+           row-gap:5px
+        }
+       
+        #regionAndDistrictContainer h4{
+            text-align: center;
+        }
+
+        .region{
+            padding-top:3px;
+            padding-bottom:3px;
+            background-color: rgb(194, 137, 31);
+            
+        }
+
+        .districtContainer{
+            background-color: rgb(214, 214, 214);
+            padding:10px
+
+        }
+
+        #region1{grid-area:region1; }
+        #region2{grid-area:region2; }
+        #region3{grid-area:region3; }
+
+        #district1{grid-area:district1}
+        #district2{grid-area:district2}
+        #district3{grid-area:district3}
+       
+        #SeasonContainer{
+            display:grid;
+            grid-template-columns:repeat(2, 1fr);
+            row-gap:50px;
+            margin:20px;
+            
+            padding:10px;
+        }
+       
+        .season{
+            display:flex
+        }
+
+        .season img{
+            width: 40%;
+            border-top-left-radius:50px;
+            object-fit: cover;
+        }
+
+        .season div{
+            margin-left:30px
+        }
+
+        .season div ul{
+            padding:0;
+            margin:0;
+            list-style-type:disc
+        }
+
+        .season div h3{
+            padding:0;
+            margin:0;
+        }
+
+        td{
+            background-color: rgb(232, 232, 232);
+        }
+
+        #population{
+            width: 100%;
+            margin-bottom:30px
+        }
+
+        #population th, #population td{
+           border-bottom:1px solid black
+        }
+
+        #population th{
+            background-color: rgb(207, 207, 207);
+        }
+
+        #population{
+            border-spacing:0
+        }
+
+        #population th{
+            text-align: start;
+           
+          
+        }
+
+        #population td{
+            text-align: center;
+            
+        }
+
+
+        #LargestDistricts, #LargestDistricts th, #LargestDistricts td{
+           
+            text-align: center;
+        }
+
+        #LargestDistricts{
+            width: 100%;
+            border-spacing:0;
+            margin-bottom:30px
+        }
+
+        .tableTitle{
+            background-color: rgb(230, 165, 45);;
+        }
+
+        .dataHeading{
+            background-color:  rgb(207, 207, 207);
+            
+        }
+
+        .sec{
+            border-left:1px solid black
+        }
+
+        #LargestDistricts td{
+            border-bottom:1px solid black
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div id="webLogo">LOGO</div>
+
+        <div class="navagation">
+            <div id="aboutTabContainer">
+                <a>About <span
+                        style="font-family:cursive; display: inline-block; transform: rotate(90deg); margin-left: 6px;">></span></a>
+                <div class="dropdown">
+                    <ul>
+                        <li style="border-top-right-radius: 10px; border-top-left-radius: 10px"><a href="about.html">General</a></li>
+                        <li><a href="statistic.html">Statistic</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li style="border-bottom-right-radius: 10px; border-bottom-left-radius: 10px"><a href = "crackdown.html">Crackdown</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <a href="landmarks.html">Landmarks</a>
+            <a href = "cuisine.html">Cuisine</a>
+            <a href="forum.html">Forum</a>
+            
+        </div>
+
+    </nav>
+
+    <div id="pageTitleBox">
+        <h1>About Hong Kong</h1>
+        <input id="searchBox" type="text" placeholder="Search">
+    </div>
+
+
+    <aside id="aboutAside">
+        <div id="title">
+            table of content
+        </div>
+        <ul>
+            <li>
+                <a href="#introduction">Introduction</a>
+            </li>
+            <li>
+                <a href="#economy">Economy</a>
+            </li>
+            <li>
+                <a href="#culture">Culture</a>
+            </li>
+            <li>
+                <a href="#polictics">Politics</a>
+            </li>
+            <li>
+                <a href="#environment">Environment</a>
+            </li>
+            <li>
+                <a href="#history">History</a>
+            </li>
+        </ul>
+    </aside>
+
+
+    <main>
+        <button id="TableOfContent">Table of content</button>
+        <h2>Geography</h2>
+        
+        <h3>Regions and districts </h3> 
+        <div id = "regionAndDistrictContainer"> 
+
+            <h4 class = "region" id = "region1">New Territories</h4>   
+            <div class = "districtContainer" id = "district1">
+                <ol>
+                    <li>Islands District</li>
+                    <li>Kwai Tsing District</li>
+                    <li>North District</li>
+                    <li>Sai Kung District</li>
+                    <li>Sha Tin</li>
+                    <li>Tai Po District</li>
+                    <li>Tsuen Wan District</li>
+                    <li>Tuen Mun District</li>
+                    <li>Yuen Long District</li>
+                </ol>
+            </div>
+
+            <h4 class = "region" id = "region2">Kowloon</h4>
+            <div class = "districtContainer" id = "district2"> 
+                <ol start = "10">
+                    <li>Kowloon City District</li>
+                    <li>Kwun Tong District</li>
+                    <li>Sham Shui Po District</li>
+                    <li>Wong Tai Sin District</li>
+                    <li>Yau Tsim Wong District</li>
+                </ol>
+            </div>
+            
+            <h4 class = "region" id = "region3">Hong Kong Island</h2>
+            <div class = "districtContainer" id = "district3">
+                <ol start = "15">
+                    <li>Central and Western District</li>
+                    <li>Eastern District</li>
+                    <li>Southern District</li>
+                    <li>Wan Chai District</li>
+                </ol>
+            </div>
+
+        </div>
+       
+      
+        <h2>Weather</h2>
+        <div id = "SeasonContainer">
+            
+            <div class = "season ">
+                <img src="Photos/Spring.jpg" alt="" >
+                <div>
+                    <h3>Spring (Mar to May)</h3>
+                    <ul>
+                        <li>Average Temperature: 75&deg;F (18&deg;C - 28&deg;C)</li>
+                        <li>Rainfall:20-30mm</li>
+                        <li>Humidity: 83-74%</li>
+                        <li>Suggested outfit: T-shirt and shorts</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class = "season ">
+                <img src="Photos/Summer.jpg" alt="" >
+                <div>
+                    <h3>Summer (Jun to Aug)</h3>
+                    <ul>
+                        <li>Average Temperature: 75&deg;F (26&deg;C - 30&deg;C+)</li>
+                        <li>Rainfall:20-30mm</li>
+                        <li>Humidity: 83-74%</li>
+                        <li>Suggested outfit: T-shirt and shorts</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class = "season ">
+                <img src="Photos/Autumn.jpg" alt="" >
+                <div>
+                    <h3>Autumn (Sep to Nov)</h3>
+                    <ul>
+                        <li>Average Temperature: 75&deg;F (19&deg;C - 28&deg;C)</li>
+                        <li>Rainfall:20-30mm</li>
+                        <li>Humidity: 83-74%</li>
+                        <li>Suggested outfit: T-shirt and shorts</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class = "season ">
+                <img src="Photos/Winter.jpg" alt="" >
+                <div>
+                    <h3>Winter (Dec to Feb)</h3>
+                    <ul>
+                        <li>Average Temperature: 75&deg;F (15&deg;C - 19&deg;C)</li>
+                        <li>Rainfall:20-30mm</li>
+                        <li>Humidity: 83-74%</li>
+                        <li>Suggested outfit: T-shirt and shorts</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class = "season ">
+                <img src="Photos/Typoon.jpg" alt="" >
+                <div>
+                    <h3>Typhoon season (Apr to Oct)</h3>
+                    <ul>
+                        <li>Natural disaster: Landslides and flooding occurs</li>
+                        <li>Around 8 times a year</li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Population</h2>
+        <table id = "population">
+            <tr>
+                <th>Total population</th>
+                <td>7.413mil</td>
+            </tr>
+            <tr>
+                <th>Yearly Population Growth Rate (%)</th>
+                <td>0.04%</td>
+            </tr>
+            <tr>
+                <th>Population density</th>
+                <td>7135 per Km (18,479 people per mi)</td>
+            </tr>
+            <tr>
+                <th>median age</th>
+                <td>45.9 years old</td>
+            </tr>
+        </table>
+        
+        <h2>Population by city</h2>
+        <table id = "LargestDistricts">
+           
+            <tr>
+                <th class = "dataHeading">City</th>
+                <th class = "dataHeading sec">Population</th>
+            </tr>
+            <tr>
+                <td>Kowloon</td>
+                <td class = "sec">2,019,533</td>
+            </tr>
+            <tr>
+                <td>Tsuen Wan</td>
+                <td class = "sec">288,728</td>
+            </tr>
+            <tr>
+                <td>Yuen Long Kau Hui</td>
+                <td class = "sec">141,900</td>
+            </tr>
+            <tr>
+                <td>Tung Chung</td>
+                <td class = "sec">45,000</td>
+            </tr>
+            <tr>
+                <td>Sha Tin</td>
+                <td class = "sec">21,559</td>
+            </tr>
+            <tr>
+                <td>Tuen Mun</td>
+                <td class = "sec">16,940</td>
+            </tr>
+            <tr>
+                <td>Tai Po</td>
+                <td class = "sec">16,302</td>
+            </tr>
+            <tr>
+                <td>Sai Kung</td>
+                <td class = "sec">11,927</td>
+            </tr>
+            <tr>
+                <td>Yung Shue Wan</td>
+                <td class = "sec">6,000</td>
+            </tr>
+        </table>
+
+    <div id="referenceSection">
+        <h3>Reference list:</h3>
+        
+        Photo by <a href="https://unsplash.com/@ethanrobertson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ethan Robertson</a> on <a href="https://unsplash.com/photos/black-ray-ban-wayfarer-sunglasses-on-beach-sand-SYx3UCHZJlo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+        <br>
+        Photo by <a href="https://unsplash.com/@daiga_ellaby?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Daiga Ellaby</a> on <a href="https://unsplash.com/photos/white-flowers-in-shallow-focus-photography-YnNczu62rdk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        <br>
+        Photo by <a href="https://unsplash.com/@ewitsoe?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Erik Witsoe</a> on <a href="https://unsplash.com/photos/forest-against-sunlight-at-daytime-pvoQJym18Jg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        <br>
+        Photo by <a href="https://unsplash.com/@aaronburden?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Aaron Burden</a> on <a href="https://unsplash.com/photos/focused-photo-of-a-snow-flake-5AiWn2U10cw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        <br>
+        Photo by <a href="https://unsplash.com/@nasa?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">NASA</a> on <a href="https://unsplash.com/photos/typhoon-i9w4Uy1pU-s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+    </div>
+</body>
+
+</html>

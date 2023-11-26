@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - About Hong Kong </title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="general.css">
+
+    <link rel="stylesheet" href="forum.css">
+    <style>
+      
+     
+      
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="webLogo">LOGO</div>
+
+        <div class="navagation">
+            <div id="aboutTabContainer">
+                <a>About <span
+                        style="font-family:cursive; display: inline-block; transform: rotate(90deg); margin-left: 6px;">></span></a>
+                <div class="dropdown">
+                    <ul>
+                        <li style="border-top-right-radius: 10px; border-top-left-radius: 10px"><a href="about.html">General</a></li>
+                        <li><a href="statistic.html">Statistic</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li style="border-bottom-right-radius: 10px; border-bottom-left-radius: 10px"><a href = "crackdown.html">Crackdown</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <a href="landmarks.html">Landmarks</a>
+            <a href = "cuisine.html">Cuisine</a>
+            <a href="forum.html">Forum</a>
+            
+        </div>
+
+    </nav>
+
+    <div id = "pageTitleBox">
+        <h1>Forum</h1>
+        <input id = "searchBox" type = "text" placeholder = "Search">
+    </div>
+   
+
+    <aside id = "forumAside">
+       <a href="">All categories</a>
+       <div id = "trending">
+            <p>Trending</p>
+            <a href="">&#128149; relationship</a>
+            <a href="">&#128532; emotion</a>
+            <a href="">&#128490; casual talk</a>
+            <a href="">&#128214; academic</a>
+            <a href="">&#128240; News</a>
+            <a href="">&#127979; School life</a>
+            <a href="">&#127836; Eat</a>
+            <a href="">&#128119; Work</a>
+            <a href="">&#9917; Sports</a>
+            <a href="">&#9992; Travel</a>
+       </div>
+    </aside>
+
+
+    <main>
+        <div id = "categoryTitle"> &#128149;relationship </div>
+        <div class = "contentBox">
+            <div class = "contentCreator">User1</div>
+            <div class = "contentTitle">Title</div>
+            <p class = "contentPreview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis earum nostrum quidem accusantium vel veritatis. Velit in architecto, error beatae eius minus iste, laboriosam dolores cum dignissimos consectetur eum sint.</p>
+        </div>
+        
+        <div class = "contentBox">
+            <div class = "contentCreator">User1</div>
+            <div class = "contentTitle">Title</div>
+            <p class = "contentPreview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis earum nostrum quidem accusantium vel veritatis. Velit in architecto, error beatae eius minus iste, laboriosam dolores cum dignissimos consectetur eum sint.</p>
+        </div>
+
+        <div class = "contentBox">
+            <div class = "contentCreator">User1</div>
+            <div class = "contentTitle">Title</div>
+            <p class = "contentPreview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis earum nostrum quidem accusantium vel veritatis. Velit in architecto, error beatae eius minus iste, laboriosam dolores cum dignissimos consectetur eum sint.</p>
+        </div>
+        <div class = "contentBox">
+            <div class = "contentCreator">User1</div>
+            <div class = "contentTitle">Title</div>
+            <p class = "contentPreview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis earum nostrum quidem accusantium vel veritatis. Velit in architecto, error beatae eius minus iste, laboriosam dolores cum dignissimos consectetur eum sint.</p>
+        </div>
+
+        
+    </main>
+
+    <div id = "contentOverlay" style = "display: none;">
+        <div id = "contentDisplay" data-closable>
+            <button id = "closeButton" data-close >x</button>
+            <div id = "contentSection">
+                <div id = "contentCreator">User1</div>
+                <div id = "contentTitle">Title</div>
+                <p id = "content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis earum nostrum quidem accusantium vel veritatis. Velit in architecto, error beatae eius minus iste, laboriosam dolores cum dignissimos consectetur eum sint.</p>
+            </div>
+            
+            <div id = "commentsSection">
+                
+
+                <p id = "title">A total of 500 comments</p>
+                <div class = "userCommentBox">
+                    <p class = "username">User2</p>
+                    <p class = "userComment">this is so good</p>
+                    <p class = "commentTime">yesterday 18:04</p>
+                    <button class = "replyButton">reply</button>
+
+                </div>
+                <div class = "userCommentBox">
+                    <p class = "username">User2</p>
+                    <p class = "userComment">this is so good</p>
+                    <p class = "commentTime">yesterday 18:04</p>
+                    <button class = "replyButton">reply</button>
+
+                </div>
+                <div class = "userCommentBox">
+                    <p class = "username">User2</p>
+                    <p class = "userComment">this is so good</p>
+                    <p class = "commentTime">yesterday 18:04</p>
+                    <button class = "replyButton">reply</button>
+
+                </div>
+                <div class = "userCommentBox">
+                    <p class = "username">User2</p>
+                    <p class = "userComment">this is so good</p>
+                    <p class = "commentTime">yesterday 18:04</p>
+                    <button class = "replyButton">reply</button>
+
+                </div>
+
+                
+            </div>
+           
+        </div>
+    </div>
+
+
+    
+
+    <!--script>
+        var closebtns = document.getElementById("closeButton");
+ 
+        closebtns.addEventListener("click", function() {
+        this.parentElement.parentElement.style.display = 'none';
+        });
+        
+    </script-->
+</body>
+</html>

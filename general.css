@@ -1,0 +1,17 @@
+
+
+ul{
+    list-style-type:none;
+}
+
+body{
+    margin:0;
+    padding-top:50px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(63, 26, 6);
+}
+
+h1{
+    text-align: center;
+    color:white
+}

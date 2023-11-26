@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - About Hong Kong </title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="landmarks.css">
+    <link rel="stylesheet" href="referenceSection.css">
+    
+    <style>
+         #popupInfoWindow{
+            transition: .3s;
+            scale:0;
+            position: fixed;
+            background-color: white;
+            height: fit-content;
+            top:calc(50% - 50px);
+            bottom:50%;
+            right: 30%;
+            left: 30%;
+            z-index: 11;
+            padding: 20px 20px;
+            padding-bottom:10px;
+            border-radius: 10px;
+        }
+
+        .overlay{
+            display: none;
+            position: fixed;
+            top:0;
+            bottom:0;
+            right: 0;
+            left: 0;
+            z-index: 10;
+            background-color: rgba(0,0,0,.5);
+        }
+        
+        #popupInfoWindow h3{
+            margin: 0;
+            
+        }
+
+        #popupInfoWindow ul{
+            list-style-type:disc;
+        }
+
+        #popupInfoWindow button{
+            width: 100%;
+            font-size: 15px;
+            cursor: pointer;
+            border:none;
+            line-height: 24px;
+            background-color: rgb(221, 221, 221);
+            transition: background-color .2s
+        }
+
+        #popupInfoWindow button:hover{
+            background-color: rgb(195, 192, 192);
+        }
+
+       
+        .popupTweenIn{
+                transition:.3s;
+                scale:1 !important;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class = "overlay"> a</div>
+    <div id = "popupInfoWindow">
+        
+        <h3>Name of cuisine</h3>
+        <hr>
+        
+        <p>
+            Ingredient:
+            <ul>
+                <li>sugar</li>
+                <li>salt</li>
+            </ul>
+        </p>
+
+        <button id = "closeButton">close</button>
+    </div>
+
+    
+
+    <nav>
+        <div id="webLogo">LOGO</div>
+
+        <div class="navagation">
+            <div id="aboutTabContainer">
+                <a>About <span
+                        style="font-family:cursive; display: inline-block; transform: rotate(90deg); margin-left: 6px;">></span></a>
+                <div class="dropdown">
+                    <ul>
+                        <li style="border-top-right-radius: 10px; border-top-left-radius: 10px"><a href="about.html">General</a></li>
+                        <li><a href="statistic.html">Statistic</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li style="border-bottom-right-radius: 10px; border-bottom-left-radius: 10px"><a href = "crackdown.html">Crackdown</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <a href="landmarks.html">Landmarks</a>
+            <a href = "cuisine.html">Cuisine</a>
+            <a href="forum.html">Forum</a>
+            
+        </div>
+
+    </nav>
+
+    <h1>Trending in Hong Kong</h1>
+
+    <div class="HeroArea">
+        <button id="leftHeroButton"> &lt;</button>
+
+        <button id="rightHeroButton"> &gt;</button>
+        <div id="heroIndicator">
+            <div class="indicatingCircle"></div>
+            <div class="indicatingCircle"></div>
+            <div class="indicatingCircle"></div>
+            <div class="indicatingCircle"></div>
+            <div class="indicatingCircle"></div>
+            <div class="indicatingCircle"></div>
+            <div class="indicatingCircle"></div>
+            <div class="indicatingCircle"></div>
+            <div class="indicatingCircle"></div>
+            <div class="indicatingCircle"></div>
+        </div>
+    </div>
+
+    <main>
+        
+        <div id = "itemGrid">
+            <h2>Cuisines</h2>
+        </div>
+    </main>
+
+    <div id = "referenceSection">
+        <h3>Reference list:</h3>
+        
+
+    </a>
+    </div>
+
+    <script type = "module" src = "Scripts/cuisineHandler.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+import {ItemDataList as cuisinData, heroDataList} from "../DataBase/cuisine.js";
+import {getCuisineById} from "../DataBase/cuisine.js";
+
+//let cuisineButtons = document.getElementsByClassName("itemContainer");
+let overlay = document.querySelector(".overlay");
+let popupWindow = document.querySelector("#popupInfoWindow");
+let closebtn = document.getElementById("closeButton") ;
+let itemGrid = document.getElementById("itemGrid")
+let referenceContainer = document.getElementById("referenceSection");
+
+let heroContainer = document.querySelector(".HeroArea");
+
+renderCuisinGrid();
+let itemContainers = document.querySelectorAll(".js-itemContainer");
+
+//load hero(make it auto slide next)
+heroContainer.style.backgroundImage  = "url(../../Photos/cuisineHero1.jpg)";
+
+itemContainers.forEach((btn) =>{
+    btn.addEventListener("click", () => {
+        console.log("clicked");
+        overlay.style.display = "block";
+        console.log(btn.dataset.itemId);
+        let item = getCuisineById(btn.dataset.itemId);
+
+        updatePopupWindow(item.name, item.recipe);
+        
+        popupWindow.classList.add("popupTweenIn");
+    
+    })
+})
+
+closebtn.addEventListener("click", function(){
+    overlay.classList.remove("overlayTween");
+    overlay.style.display = "none"
+    
+    popupWindow.classList.remove("popupTweenIn");
+ 
+});
+
+
+
+function updatePopupWindow(name, recipe){
+    popupWindow.querySelector("h3").innerHTML = name;
+    
+    popupWindow.querySelector("ul").innerHTML = "";
+    
+    for(let desc of recipe){
+        popupWindow.querySelector("ul").innerHTML += (`<li>${desc}</li>`);
+    };
+    
+}
+
+
+
+function renderCuisinGrid(){
+    for(let i = 0; i < cuisinData.length; i++){
+
+        let item = cuisinData[i];
+
+        let templateBox = `
+            <div class = "itemContainer js-itemContainer" data-item-id = "${item.id}">
+                <img class = "itemImage" src = "Photos/cuisine${i + 1}.jpg" alt = "">
+                <div class = "itemInfo">
+                    <div class = "nameOfItem">${item.name}</div>
+                    <div class = "ratingCol">
+                        <div class = "itemRating">${item.rating}<small class = "maxRate">/5</small></div>
+                        <small class = "numOfReviews">${item.numOfReviews} reviews</small>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        itemGrid.innerHTML += templateBox;
+        referenceContainer.innerHTML += `${item.referenceItem}<br>`;
+    }
+}
