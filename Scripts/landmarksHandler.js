@@ -5,15 +5,16 @@ let popupWindow = document.querySelector("#popupInfoWindow");
 let itemGrid = document.getElementById("itemGrid")
 let referenceContainer = document.getElementById("referenceSection");
 
-let heroContainer = document.querySelector(".HeroArea");
+const heroContainer = document.querySelector(".HeroArea");
 
+let PhotosFolderPath = "../Photos";
 
 function renderLandmarksGrid(){
     for(let i = 0; i < landmarksData.length; i++){
         let item = landmarksData[i];
         let templateBox = `
             <div class = "itemContainer">
-                <img class = "itemImage" src = "Photos/attraction${i + 1}.jpg" alt = "">
+                <img class = "itemImage" src = "${PhotosFolderPath}/attraction${i + 1}.jpg" alt = "">
                 <div class = "itemInfo">
                     <div class = "nameOfItem">${item.name}</div>
                     <div class = "ratingCol">

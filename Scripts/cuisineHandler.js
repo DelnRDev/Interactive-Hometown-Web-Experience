@@ -10,11 +10,13 @@ let referenceContainer = document.getElementById("referenceSection");
 
 let heroContainer = document.querySelector(".HeroArea");
 
+let PhotosFolderPath = "../Photos";
+
 renderCuisinGrid();
 let itemContainers = document.querySelectorAll(".js-itemContainer");
 
 //load hero(make it auto slide next)
-heroContainer.style.backgroundImage  = "url(../../Photos/cuisineHero1.jpg)";
+heroContainer.style.backgroundImage  = `url(${PhotosFolderPath}/cuisineHero1.jpg)`;
 
 itemContainers.forEach((btn) =>{
     btn.addEventListener("click", () => {
@@ -60,7 +62,7 @@ function renderCuisinGrid(){
 
         let templateBox = `
             <div class = "itemContainer js-itemContainer" data-item-id = "${item.id}">
-                <img class = "itemImage" src = "Photos/cuisine${i + 1}.jpg" alt = "">
+                <img class = "itemImage" src = "${PhotosFolderPath}/cuisine${i + 1}.jpg" alt = "">
                 <div class = "itemInfo">
                     <div class = "nameOfItem">${item.name}</div>
                     <div class = "ratingCol">

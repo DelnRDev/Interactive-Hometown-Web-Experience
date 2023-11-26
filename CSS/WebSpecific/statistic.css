@@ -55,7 +55,7 @@ h4, ol{
 
 .season img{
     width: 40%;
-    border-top-left-radius:50px;
+    border-radius:10px;
     object-fit: cover;
 }
 
