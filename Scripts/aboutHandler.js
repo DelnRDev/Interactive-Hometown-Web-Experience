@@ -19,7 +19,7 @@ tableOfContentBtn.addEventListener("click", () =>{
     }
 
 })
-
+/*
 let isPC = window.matchMedia("(min-width:1200px)");
 
 if(isPC.matches){
@@ -42,6 +42,7 @@ isPC.addListener(function(){
 
     }
 })
+*/
 
 
 

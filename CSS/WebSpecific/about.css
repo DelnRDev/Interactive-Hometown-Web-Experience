@@ -97,7 +97,7 @@
 }
 
 
-/*end mobile subnav*/
+/*end mobile subnav
 #aboutAside li{
     margin-bottom:15px;
     
@@ -110,7 +110,7 @@
 #aboutAside a:hover{
     text-decoration: underline;
 }
-
+*/
 /* Responsive design*/
 @media only screen and (min-width:600px){
    
@@ -122,7 +122,7 @@
         float:right;
     }
         
-    /* Title Section*/
+    /* Title Section
     #pageTitleBox{
     
         padding-right:40px;
@@ -138,15 +138,16 @@
         text-align: center;
        
     }
+    */
 }
 
 @media only screen and (min-width: 1200px) {
-    /* General */
+    /* General 
     body{
         padding-left:200px
     }
-
-    /* side Nav */
+    */
+    /* side Nav 
     #aboutAside{
         display:block;
         width: 200px;
@@ -155,12 +156,15 @@
         left:0;
     }
 
-   
+   */
 
-    /*Table of content button*/
+    /*Table of content button
+
     #TableOfContent{
         display:none
     }
+
+    */
 
     /*Main content section */
     .descImg{
