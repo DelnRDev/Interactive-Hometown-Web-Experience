@@ -89,6 +89,9 @@ for(let slide of heroDataList){
 
     heroSlideContainer.innerHTML += slideTemplate;
 
+    //add ref
+    
+    referenceContainer.innerHTML += `${slide.referenceItem}<br>`;
 }
 
 

@@ -48,6 +48,7 @@ for(let slide of heroTable){
 
     heroSlideContainer.innerHTML += slideTemplate;
 
+    referenceContainer.innerHTML += `${slide.referenceItem}<br>`
 }
 
 
