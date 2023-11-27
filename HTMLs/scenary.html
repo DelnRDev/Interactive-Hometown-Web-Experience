@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - About Hong Kong </title>
+
+    <!--General css  files-->
+    <link rel="stylesheet" href="../CSS/GeneralWebStructure/nav.css">
+    <link rel="stylesheet" href="../CSS/GeneralWebStructure/general.css">
+
+    <!--link rel="stylesheet" href="../CSS/GeneralWebStructure/imageBasedStructure.css"--> 
+    <link rel="stylesheet" href="../CSS/GeneralWebStructure/referenceSection.css">
+    <script src = "http://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <style>
+    #itemGrid{
+        background-color: rgb(220, 220, 220);
+        padding:20px 20px;
+        margin:auto;
+        width: 90%;
+        display:grid;
+        grid-gap:10px;
+        grid-template-columns: repeat(1, 1fr);
+        border-radius: 10px;
+    }
+
+    .img-container{
+        position: relative;
+        cursor: pointer;
+        
+    }
+
+   .img-container img{
+        width: 100%;
+        aspect-ratio: 2/1.5;
+        border-radius: 10px;
+   }
+
+   /*overlay*/
+   .img-container::after{
+        content: " ";
+        position: absolute;
+        background-color: rgba(0,0,0, .5);
+        bottom:0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        border-radius: 10px;
+        transition: .1s
+   }
+
+   .img-container:hover::after{
+       height: 100%;
+   }
+
+   /*overlay text*/
+
+   .img-container::before{
+        content: attr(data-content);
+        position: absolute;
+        top:10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        font-size: 25px;
+        color:white;
+        transition: top .1s;
+        opacity: 0;
+        z-index: 1;
+        text-align: center;
+   }
+
+   .img-container:hover::before{
+        top:50%;
+        opacity: 1;
+   }
+
+   /*Responsive design*/
+
+  
+
+   @media only screen and (min-width:600px){
+        #itemGrid{
+            grid-template-columns: repeat(2, 1fr);
+        }
+   }
+
+   @media only screen and (min-width:768px){
+        #itemGrid{
+            grid-template-columns: repeat(3, 1fr);
+        }
+   }
+
+   @media only screen and (min-width:1200px){
+        #itemGrid{
+            grid-template-columns: repeat(4, 1fr);
+        }
+   }
+ 
+
+  
+  </style>
+</head>
+
+<body>
+
+   
+    <nav>
+        <div id="webLogo">LOGO</div>
+
+        <div class="navagation">
+            <div id="aboutTabContainer">
+                <a>About <span
+                        style="font-family:cursive; display: inline-block; transform: rotate(90deg); margin-left: 6px;">></span></a>
+                <div class="dropdown">
+                    <ul>
+                        <li style="border-top-right-radius: 10px; border-top-left-radius: 10px"><a href="about.html">General</a></li>
+                        <li><a href="statistic.html">Statistic</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li style="border-bottom-right-radius: 10px; border-bottom-left-radius: 10px"><a href = "crackdown.html">Crackdown</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <a href="landmarks.html">Landmarks</a>
+            <a href = "cuisine.html">Cuisine</a>
+            <a href="forum.html">Forum</a>
+            
+        </div>
+
+    </nav>
+
+    <h1>Hong Kong Scenary</h1>
+
+    
+
+    <main>   
+        <div id = "itemGrid">
+
+            
+        </div>   
+
+    </main>
+
+    <div id = "referenceSection">
+        <h3>Reference list:</h3>
+    </a>
+    </div>
+    <script type = "module" src = "../Scripts/scenaryHandler.js">
+       
+
+
+    </script>
+</body>
+
+</html>
