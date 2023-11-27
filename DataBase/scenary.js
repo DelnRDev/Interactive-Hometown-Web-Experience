@@ -57,7 +57,7 @@ export const categories = [
         id: "36b9c432-0a49-41eb-a2f0-7dfd960c7574",
         name: "Nature and Parks",
         fileName: "category7.jpg",
-        referenceItem: 'Photo by <a href="https://unsplash.com/@mroz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Filip Mroz</a> on <a href="https://unsplash.com/photos/people-standing-near-lamp-post-and-building-VH7NuUbj104?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
+        referenceItem: 'Photo by <a href="https://unsplash.com/@bigdodzy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Big Dodzy</a> on <a href="https://unsplash.com/photos/green-grass-on-black-rock-formation-near-blue-sea-under-blue-sky-during-daytime-FG97NhftIgc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
         subPhotos:[
 
         ]
