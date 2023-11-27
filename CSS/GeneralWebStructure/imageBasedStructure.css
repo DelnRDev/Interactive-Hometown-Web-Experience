@@ -21,7 +21,7 @@ main{
  /* Hero section*/
  .HeroArea {
     background-color: rgba(255,255,255,.1);
-    height: 100%;
+    width: 100%;
     aspect-ratio: 2/1.1;
     /*background-image: url(Photos/cuisineHero1.jpg);*/
     background-position: center;
@@ -49,10 +49,12 @@ main{
 
 #leftHeroButton {
     left: 0;
+    z-index: 1;
 }
 
 #rightHeroButton {
     right: 0;
+    z-index: 1;
 }
 
 #leftHeroButton:hover,

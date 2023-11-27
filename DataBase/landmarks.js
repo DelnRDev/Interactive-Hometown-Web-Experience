@@ -82,6 +82,25 @@ export const ItemDataList = [
     
 ];
 
+export const heroTable = [
+    {
+        fileName:"landmarkHero1.jpg",
+        alt: "",
+        referenceItem: 'Photo by <a href="https://unsplash.com/@nodefchilok?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Chi Lok TSANG</a> on <a href="https://unsplash.com/photos/the-skyline-of-a-city-is-reflected-in-a-pool-bYDsGLMBTPs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
+    },
+    {
+        fileName:"landmarkHero2.jpg",
+        alt: "",
+        referenceItem: 'Photo by <a href="https://unsplash.com/@yokonoito0512?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Hongwei FAN</a> on <a href="https://unsplash.com/photos/a-view-of-a-city-from-a-high-point-of-view-_pE4kAFeUcM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
+    },
+    {
+        fileName:"landmarkHero3.jpg",
+        alt: "",
+        referenceItem: 'Photo by <a href="https://unsplash.com/@agromov?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Anatoliy Gromov</a> on <a href="https://unsplash.com/photos/vehicle-on-road-during-nighttime-dgS24idJaKM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
+    },
+    
+]
+
 export function getLandmarkById(id){
     for(let item of ItemDataList){
         if(item.id == id){

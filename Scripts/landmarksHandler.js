@@ -1,11 +1,11 @@
-import {ItemDataList as landmarksData } from "../DataBase/landmarks.js";
+import {ItemDataList as landmarksData, heroTable } from "../DataBase/landmarks.js";
 
 let overlay = document.querySelector(".overlay");
 let popupWindow = document.querySelector("#popupInfoWindow");
 let itemGrid = document.getElementById("itemGrid")
 let referenceContainer = document.getElementById("referenceSection");
 
-const heroContainer = document.querySelector(".HeroArea");
+const heroSlideContainer = document.querySelector(".slider");
 
 let PhotosFolderPath = "../Photos";
 
@@ -34,6 +34,59 @@ function renderLandmarksGrid(){
 
 renderLandmarksGrid();
 
-heroContainer.style.backgroundImage  = "url(../../Photos/landmarkHero1.jpg)";
+//heroContainer.style.backgroundImage  = "url(../../Photos/landmarkHero1.jpg)";
 
  
+//Hero section
+
+for(let slide of heroTable){
+    let slideTemplate = `
+        <div class="slide">
+            <img class = "slideImg" src="${PhotosFolderPath}/${slide.fileName}" alt="${slide.alt}">
+        </div>
+    `;
+
+    heroSlideContainer.innerHTML += slideTemplate;
+
+}
+
+
+const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide');
+let nextSlideButton = document.querySelector("#rightHeroButton");
+let backSlideButton = document.querySelector("#leftHeroButton");
+
+
+let currentIndex = 0;
+
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateSlider();
+}
+
+function backSlide(){
+    if(currentIndex - 1 >= 0 ){
+        currentIndex = (currentIndex - 1) % slides.length;
+    }else{
+        currentIndex = slides.length - 1;
+    }
+    
+    updateSlider();
+}
+
+function updateSlider() {
+    console.log(currentIndex);
+    const translateValue = -currentIndex * 100 + '%';
+    slider.style.transform = 'translateX(' + translateValue + ')';
+}
+
+setInterval(nextSlide, 4000);
+
+nextSlideButton.addEventListener("click", () =>{
+    nextSlide();
+})
+
+backSlideButton.addEventListener("click", () =>{
+    backSlide();
+})
+

@@ -8,7 +8,7 @@ let closebtn = document.getElementById("closeButton") ;
 let itemGrid = document.getElementById("itemGrid")
 let referenceContainer = document.getElementById("referenceSection");
 
-let heroContainer = document.querySelector(".HeroArea");
+let heroSlideContainer = document.querySelector(".slider");
 
 let PhotosFolderPath = "../Photos";
 
@@ -16,7 +16,7 @@ renderCuisinGrid();
 let itemContainers = document.querySelectorAll(".js-itemContainer");
 
 //load hero(make it auto slide next)
-heroContainer.style.backgroundImage  = `url(${PhotosFolderPath}/cuisineHero1.jpg)`;
+//heroContainer.style.backgroundImage  = `url(${PhotosFolderPath}/cuisineHero1.jpg)`;
 
 itemContainers.forEach((btn) =>{
     btn.addEventListener("click", () => {
@@ -77,3 +77,56 @@ function renderCuisinGrid(){
         referenceContainer.innerHTML += `${item.referenceItem}<br>`;
     }
 }
+
+//Hero section
+
+for(let slide of heroDataList){
+    let slideTemplate = `
+        <div class="slide">
+            <img class = "slideImg" src="${PhotosFolderPath}/${slide.fileName}" alt="${slide.alt}">
+        </div>
+    `;
+
+    heroSlideContainer.innerHTML += slideTemplate;
+
+}
+
+
+const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide');
+let nextSlideButton = document.querySelector("#rightHeroButton");
+let backSlideButton = document.querySelector("#leftHeroButton");
+
+
+let currentIndex = 0;
+
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateSlider();
+}
+
+function backSlide(){
+    if(currentIndex - 1 >= 0 ){
+        currentIndex = (currentIndex - 1) % slides.length;
+    }else{
+        currentIndex = slides.length - 1;
+    }
+    
+    updateSlider();
+}
+
+function updateSlider() {
+    console.log(currentIndex);
+    const translateValue = -currentIndex * 100 + '%';
+    slider.style.transform = 'translateX(' + translateValue + ')';
+}
+
+setInterval(nextSlide, 4000);
+
+nextSlideButton.addEventListener("click", () =>{
+    nextSlide();
+})
+
+backSlideButton.addEventListener("click", () =>{
+    backSlide();
+})

@@ -155,7 +155,18 @@ export const ItemDataList = [
 export const heroDataList = [
     {
         alt: '',
+        fileName: 'cuisineHero1.jpg',
         referenceItem: 'Photo by <a href="https://unsplash.com/@catgirlmutant?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Catgirlmutant</a> on <a href="https://unsplash.com/photos/a-man-standing-in-front-of-a-food-stand-IP4P1YNfxYI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
+    },
+    {
+        alt: '',
+        fileName: 'cuisineHero2.jpg',
+        referenceItem: 'Photo by <a href="https://unsplash.com/@chrisvanhove?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Chris Vanhove</a> on <a href="https://unsplash.com/photos/person-in-white-apron-holding-brown-wooden-chopsticks-GXigdgQQvfY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
+    },
+    {
+        alt: '',
+        fileName: 'cuisineHero3.jpg',
+        referenceItem: 'Photo by <a href="https://unsplash.com/@jaywennington?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jay Wennington</a> on <a href="https://unsplash.com/photos/dish-on-white-ceramic-plate-N_Y88TWmGwA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
     }
 ]
 
