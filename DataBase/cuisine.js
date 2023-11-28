@@ -4,7 +4,7 @@ export const ItemDataList = [
         id: '2048a543-d461-4445-929f-24b3a1d5d043',
         name: "Egg waffle",
         rating: 4.0,
-        imgLink: "Photos/cuisine1.jpg",
+        fileName: "cuisine1.jpg",
         alt: "",
         numOfReviews: 231,
         recipe: [
@@ -18,7 +18,7 @@ export const ItemDataList = [
         id: 'd519905d-1c4a-4e75-8c53-88f24c107bbc',
         name: "Egg tart",
         rating: 2.8,
-        imgLink: "Photos/cuisine2.jpg",
+        fileName: "cuisine2.jpg",
         alt: "",
         numOfReviews: 231,
         recipe: [
@@ -34,7 +34,7 @@ export const ItemDataList = [
         id: 'bb0a1345-be0a-4c87-911d-483eb67ec005',
         name: "Umami soup noodle",
         rating: 5.0,
-        imgLink: "Photos/cuisine3.jpg",
+        fileName: "cuisine3.jpg",
         alt: "",
         numOfReviews: 231,
         recipe: [
@@ -55,7 +55,7 @@ export const ItemDataList = [
         id: '60c73e59-7de2-484d-abb7-d5b27088b470',
         name: "Beef and egg",
         rating: 1.1,
-        imgLink: "Photos/cuisine4.jpg",
+        fileName: "cuisine4.jpg",
         alt: "",
         numOfReviews: 231,
         recipe: [
@@ -77,7 +77,7 @@ export const ItemDataList = [
         id: 'ea4f9aa2-d548-4194-a5c8-c0690fe4d12f',
         name: "Rice with shrimp",
         rating: 3.7,
-        imgLink: "Photos/cuisine5.jpg",
+        fileName: "cuisine5.jpg",
         alt: "",
         numOfReviews: 231,
         recipe: [
@@ -99,7 +99,7 @@ export const ItemDataList = [
         id: '817fd321-c76e-4f11-989d-1c5028274159',
         name: "Tomatoes and sliced ice creame ",
         rating: 3.5,
-        imgLink: "Photos/cuisine6.jpg",
+        fileName: "cuisine6.jpg",
         alt: "",
         numOfReviews: 231,
         recipe: [
@@ -115,7 +115,7 @@ export const ItemDataList = [
         id: 'a882fe16-3681-4e0a-8d31-288a85b25833',
         name: "Chicken breast cubes",
         rating: 3.5,
-        imgLink: "Photos/cuisine7.jpg",
+        fileName: "cuisine7.jpg",
         alt: "",
         numOfReviews: 231,
         recipe: [
@@ -135,7 +135,7 @@ export const ItemDataList = [
         id: '5c07bc11-8278-4684-a97e-d98dacd05f9e',
         name: "Avocado with salmon",
         rating: 3.5,
-        imgLink: "Photos/cuisine8.jpg",
+        fileName: "cuisine8.jpg",
         alt: "",
         numOfReviews: 231,
         recipe: [

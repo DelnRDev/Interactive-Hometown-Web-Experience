@@ -18,6 +18,8 @@ tableOfContentBtn.addEventListener("click", () =>{
     }
 
 })
+
+
 /*
 let isPC = window.matchMedia("(min-width:1200px)");
 
@@ -45,3 +47,13 @@ isPC.addListener(function(){
 
 
 
+//This is for assignment purpose only
+let hkFlag = document.querySelector(".hkFlag");
+
+hkFlag.addEventListener("mouseover", function(){
+    hkFlag.style.cursor = "pointer"
+})
+
+hkFlag.addEventListener("click", () => {
+   alert("This is Hong Kong.")
+})

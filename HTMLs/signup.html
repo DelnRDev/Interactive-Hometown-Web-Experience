@@ -1,0 +1,223 @@
+<!--Version 2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "About Hong Kong">
+    <meta name = "keywords" content = "Hong Kong, History, Enviroment, Culture, Economy">
+    <meta name = "author" content = "Samuel Hui">
+
+    <title>Home - About Hong Kong </title>
+
+    <!--General css  files-->
+    <link rel="stylesheet" href="../CSS/GeneralWebStructure/nav.css">
+    <link rel="stylesheet" href="../CSS/GeneralWebStructure/general.css">
+    <link rel="stylesheet" href="../CSS/GeneralWebStructure/textBasedStruture.css">
+    <link rel="stylesheet" href="../CSS/GeneralWebStructure/referenceSection.css">
+
+    <!--Specific css  files-->
+    <link rel="stylesheet" href="../CSS/WebSpecific/home.css">
+    <style>
+        main{
+        
+        }
+
+        form{
+            width: 50%;
+            margin:auto;
+            margin-bottom:40px
+        }
+        fieldset{
+            display:grid;
+            
+        }
+        input[type = "submit"]{
+            background-color: rgb(6, 128, 0);
+            color:white;
+            border:none;
+            height: 25px;
+            cursor: pointer;
+        }
+
+        input[type = "submit"]:hover{
+            opacity: .8;
+        }
+
+        /* slide show*/
+        h2{
+            text-align: center;
+            color:black;
+            margin:0
+        }
+
+        .slides-container{
+            border:10px solid black;
+            
+            margin:auto;
+            position: relative;
+            width: 80%;
+            aspect-ratio: 2/1.2;
+            display: block;
+            margin-bottom: 50px;
+            overflow: hidden;
+        }
+
+        .slide{
+            
+            background-color: rgb(200, 200, 200);
+            top:10px;
+            left: 10px;
+            bottom:10px;
+            right: 10px;
+            position: absolute;
+            box-shadow: 0px 0px 5px black;
+            display: none;
+        }
+
+        img{
+            
+            margin:auto;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+  
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div id="webLogo">LOGO</div>
+       
+        <div class="navagation">
+            <a id = "HomeNavBtn" href="Home.html">Home</a>
+            <div id="aboutTabContainer">
+                <a>About <span
+                        style="font-family:cursive; display: inline-block; transform: rotate(90deg); margin-left: 6px;">></span></a>
+                <div class="dropdown">
+                    <ul>
+                        <li style="border-top-right-radius: 10px; border-top-left-radius: 10px"><a href="statistic.html">Statistic</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li style="border-bottom-right-radius: 10px; border-bottom-left-radius: 10px"><a href = "crackdown.html">Crackdown</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <a href="landmarks.html">Landmarks</a>
+            <a href = "cuisine.html">Cuisine</a>
+            <a href="scenary.html">Scenary</a>
+            
+        </div>
+
+    </nav>
+
+    
+    <h1>About Hong Kong</h1>
+ 
+
+    
+    
+
+
+    <main>
+        <p>The information in this website may not be accurate or up to date, if you want to get notifified when there is an update on this website, you can sign up below, once we have an update, you will be notified</p>
+
+        <form name = "signUp" method = "post">
+            <fieldset>
+                <legend>Sign up for update</legend>
+                <label for="name">Name: </label>
+                <input minlength="3" type = "text" id = "name" name = "formName" placeholder = "Bob"></input>
+                <br>
+                <label for="email">E-mail: </label>
+                <input type="email" id = "email" name = "formMail"placeholder = "someone@mail.com">
+                <br>
+                
+                <input type="submit" value = "Sign up">
+                
+            </fieldset>
+        </form>
+        <h2>Slide Show</h2>
+        <div class="slides-container">
+           
+       
+           
+          </div>
+    </main>
+
+    <div id="referenceSection">
+        <h3>Reference list:</h3>
+       
+    </div>
+
+    <script type = "module">
+
+
+        let SignUpForm = document.forms["signUp"];
+        let mainContainer = document.querySelector("main");
+        let nameBox = SignUpForm["formName"];
+        let mailBox = SignUpForm["formMail"];
+
+        let PhotosFolderPath = "../Photos"
+       
+
+        SignUpForm.addEventListener("submit", function(){
+            if(nameBox.value == ""){
+                alert("Please fill in your name to sign up")
+            }
+            if(mailBox.value == ""){
+                alert("Please fill in your e-mail to sign up")
+            }
+
+            if(nameBox.value != "" && mailBox.value != ""){
+                alert(`Thank you for your support!`)
+            }
+            
+                
+        })
+        
+        //gen content for slide show
+        import {ItemDataList} from "../DataBase/landmarks.js";
+        let slideContainer = document.querySelector(".slides-container");
+        let referenceSection = document.querySelector("#referenceSection")
+
+        for(let item of ItemDataList){
+            let slideTemplate = `
+                <div class="slide">
+                <!--Slide content-->
+                <img src="${PhotosFolderPath}/${item.fileName}" alt="${item.alt}">
+                </div>
+            `;
+            slideContainer.innerHTML += slideTemplate;
+            referenceSection.innerHTML += `${item.referenceItem}<br>` 
+        }
+
+        $(document).ready(function() {
+           
+            var slides = $('.slide');
+            var slideIndex = 0;
+           
+            $(slides[slideIndex]).show();
+            
+           
+            setInterval(function() {
+          
+            $(slides[slideIndex]).slideDown();
+            
+          
+            slideIndex = (slideIndex + 1) % slides.length;
+
+            $(slides[slideIndex]).slideDown();
+            }, 2000); 
+        });
+
+    </script>
+</body>
+
+</html>
