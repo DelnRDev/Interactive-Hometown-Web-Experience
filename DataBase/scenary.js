@@ -63,7 +63,7 @@ export const categories = [
         ]
     },
     {
-        id: "36b9c432-0a49-41eb-a2f0-7dfd960c7574",
+        id: "35b8b9bd-6c9a-46c2-9e54-a1508a2a8fae",
         name: "Skyline",
         fileName: "category8.jpg",
         referenceItem: 'Photo by <a href="https://unsplash.com/@mroz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Filip Mroz</a> on <a href="https://unsplash.com/photos/people-standing-near-lamp-post-and-building-VH7NuUbj104?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
