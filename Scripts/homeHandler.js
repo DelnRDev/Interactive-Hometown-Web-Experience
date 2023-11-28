@@ -10,8 +10,7 @@ let btnActive = false
 
 tableOfContentBtn.addEventListener("click", () =>{
     btnActive = !btnActive;
-    console.log(btnActive);
-
+    
     if(btnActive){
         subNavContainer.classList.add("navOpenAnimate")
     }else{

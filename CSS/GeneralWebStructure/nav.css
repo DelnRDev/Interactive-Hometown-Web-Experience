@@ -87,7 +87,7 @@ nav{
     background-color: white;
     border-radius: 10px;
     position:absolute;
-    bottom: -130px;
+    bottom: -100px; /*modify here if want to move dropdown menu vertically*/
     right: -10px;
     left: -10px;
     text-align: center;
