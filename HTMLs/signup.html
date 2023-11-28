@@ -21,9 +21,7 @@
     <!--Specific css  files-->
     <link rel="stylesheet" href="../CSS/WebSpecific/home.css">
     <style>
-        main{
         
-        }
 
         form{
             width: 50%;
@@ -85,7 +83,7 @@
             object-fit: cover;
             object-position: center;
         }
-
+        
         .jsTutor{
             background-color: rgb(203, 203, 203);
             padding:10px;
@@ -126,11 +124,6 @@
     
     <h1>About Hong Kong</h1>
  
-
-    
-    
-
-
     <main>
 
         <h2>Slide Show</h2>
@@ -183,7 +176,7 @@
 
         let PhotosFolderPath = "../Photos"
        
-
+        //form
         SignUpForm.addEventListener("submit", function(){
             if(nameBox.value == ""){
                 alert("Please fill in your name to sign up")
@@ -214,7 +207,8 @@
             slideContainer.innerHTML += slideTemplate;
             referenceSection.innerHTML += `${item.referenceItem}<br>` 
         }
-
+        
+        //Jquery slide show
         $(document).ready(function() {
            
             var slides = $('.slide');
