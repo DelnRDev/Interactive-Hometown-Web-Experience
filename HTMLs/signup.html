@@ -86,6 +86,11 @@
             object-position: center;
         }
 
+        .jsTutor{
+            background-color: rgb(203, 203, 203);
+            padding:10px;
+            border:10px solid grey
+        }
   
     </style>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -127,6 +132,10 @@
 
 
     <main>
+
+        <h2>Slide Show</h2>
+        <div class="slides-container"></div>
+
         <p>The information in this website may not be accurate or up to date, if you want to get notifified when there is an update on this website, you can sign up below, once we have an update, you will be notified</p>
 
         <form name = "signUp" method = "post">
@@ -143,12 +152,20 @@
                 
             </fieldset>
         </form>
-        <h2>Slide Show</h2>
-        <div class="slides-container">
-           
-       
-           
-          </div>
+        
+        <h2>JavaScript .addEventListener() Tutorial</h2>
+        
+        <p class = "jsTutor">
+            <span style = "color:rgb(1, 106, 1)">//Alert "Hello World!" when the user clicks on an element:</span>
+            <br>
+            <br>
+            <span style = "color:grey">element</span>.addEventListener(<span style = "color:rgb(157, 104, 4)">"click"</span>, <span style = "color:blue">function</span>(){<br>
+              
+                &nbsp;&nbsp;&nbsp;&nbsp;alert (<span style = "color:rgb(157, 104, 4)">"Hello"</span>); <br>
+               
+             
+            });
+        </p>
     </main>
 
     <div id="referenceSection">
