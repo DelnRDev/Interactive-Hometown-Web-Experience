@@ -1,4 +1,4 @@
-import {ItemDataList as landmarksData, heroTable } from "../DataBase/landmarks.js";
+import {ItemDataList as landmarksData, heroTable, ItemDataList, getLandmarkById } from "../DataBase/landmarks.js";
 
 let overlay = document.querySelector(".overlay");
 let popupWindow = document.querySelector("#popupInfoWindow");
@@ -13,7 +13,7 @@ function renderLandmarksGrid(){
     for(let i = 0; i < landmarksData.length; i++){
         let item = landmarksData[i];
         let templateBox = `
-            <div class = "itemContainer">
+            <div class = "itemContainer" data-item-id = ${item.id}>
                 <img class = "itemImage" src = "${PhotosFolderPath}/attraction${i + 1}.jpg" alt = "">
                 <div class = "itemInfo">
                     <div class = "nameOfItem">${item.name}</div>
@@ -90,4 +90,16 @@ nextSlideButton.addEventListener("click", () =>{
 backSlideButton.addEventListener("click", () =>{
     backSlide();
 })
+
+//set grid item description
+let gridItems = document.querySelectorAll(".itemContainer")
+
+for(let item of gridItems){
+    let itemData = getLandmarkById(item.dataset.itemId);
+   item.style.setProperty('--before-content', `"${itemData.fileName}"`)
+
+    let beforestyle = window.getComputedStyle(item, "::before")
+    console.log(beforestyle.content)
+   
+}
 

@@ -1,0 +1,46 @@
+.itemContainer{
+    position: relative;
+}
+
+
+.itemContainer::after{
+    content: "";
+    position: absolute;
+    color:White;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 10px;
+    opacity: 0;
+    transition: .1s;
+}
+
+.itemContainer::before{
+    content: var(--before-content, "about");
+    
+    position: absolute;
+    color:White;
+    top:35%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -35%) scale(0);
+   
+   
+    border-radius: 10px;
+    transition: .1s;
+}
+
+.itemContainer:hover::after{
+   opacity: 1;
+}
+
+.itemContainer:hover::before{
+    transform: translate(-50%, -35%) scale(1);
+   
+    
+}
+
+
+

@@ -1,0 +1,14 @@
+.itemContainer:hover{
+  
+    transform: scale(1.03);
+    border:3px solid rgb(255, 196, 0)
+}
+
+@keyframes enlarge{
+    from{
+        transform:scale(1);
+    }
+    to{
+        transform: scale(1.01);
+    }
+}

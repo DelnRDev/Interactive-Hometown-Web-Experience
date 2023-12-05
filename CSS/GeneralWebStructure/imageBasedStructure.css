@@ -48,7 +48,7 @@ main{
     transition:transform .1s;
     
 }
-
+/*only for cuisine
 .itemContainer:hover{
   
     transform: scale(1.03);
@@ -63,6 +63,7 @@ main{
         transform: scale(1.01);
     }
 }
+*/
 
 .itemImage{
     background-color: rgba(0,0,0,.2);
