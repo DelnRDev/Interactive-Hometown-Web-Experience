@@ -2,17 +2,11 @@ h4, ol{
     margin:0;
 }
 
-
+/*Region section*/
 
 #regionAndDistrictContainer{
     
-   display:grid;
-   grid-template: 
-        "region1 region2 region3" auto
-        "district1 district2 district3" auto
-        /1fr 1fr 1fr;
-   column-gap:10px;
-   row-gap:5px
+   
 }
 
 #regionAndDistrictContainer h4{
@@ -32,21 +26,23 @@ h4, ol{
 
 }
 
-#region1{grid-area:region1; }
-#region2{grid-area:region2; }
-#region3{grid-area:region3; }
-
-#district1{grid-area:district1}
-#district2{grid-area:district2}
-#district3{grid-area:district3}
-
-#SeasonContainer{
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    row-gap:50px;
-    margin:20px;
+#regionAndDistrictContainer{
     
-    padding:10px;
+    display:grid;
+    
+   grid-template-columns: 1fr;
+    column-gap:10px;
+    row-gap:5px
+ }
+
+
+ /*Weather section*/
+ #SeasonContainer{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(450px, 1fr));
+    row-gap:50px;
+    margin:auto;
+    padding:0px;
 }
 
 .season{
@@ -55,6 +51,7 @@ h4, ol{
 
 .season img{
     width: 40%;
+    aspect-ratio: 2/1.5;
     border-radius:10px;
     object-fit: cover;
 }
@@ -133,4 +130,44 @@ td{
 
 #LargestDistricts td{
     border-bottom:1px solid black
+}
+
+
+
+
+@media only screen and (min-width:700px){
+    /*region section*/
+    #regionAndDistrictContainer{
+    
+        display:grid;
+        
+        grid-template: 
+             "region1 region2 region3" auto
+             "district1 district2 district3" auto
+             /1fr 1fr 1fr;
+     
+        /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));*/
+        column-gap:10px;
+        row-gap:5px
+     }
+
+     #region1{grid-area:region1; }
+    #region2{grid-area:region2; }
+    #region3{grid-area:region3; }
+
+    #district1{grid-area:district1}
+    #district2{grid-area:district2}
+    #district3{grid-area:district3}
+
+    /*Weather section*/
+    /*
+    #SeasonContainer{
+        display:grid;
+        grid-template-columns:repeat(2, 1fr);
+        row-gap:50px;
+        margin:20px;
+        
+        padding:10px;
+    }
+    */
 }
