@@ -51,8 +51,8 @@ nav{
 }
 
 .navagation{
- 
-    display:flex;
+    
+    display:none;
     flex-direction: row;
     align-items: center;
     height: 100%;
@@ -60,25 +60,113 @@ nav{
 
 }
 
+.navDisplayButton{
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    cursor:pointer
+}
+
+.navDisplayButton:hover{
+    background-color: rgba(255,255,255,.1);
+}
+
+
+
+.navDisplayButton img{
+    height: 70%;
+    width: 70%;
+ 
+}
+
+/*mobile nav*/
+
+.mobileNav{
+    position:fixed;
+    left:0;
+    right: 0;
+    top:50px;
+    bottom:0;
+    background-color: rgba(146, 146, 146, 0.8);
+    transform:translateY(-100%);
+    transition: .1s;
+}
+
+.navagation2{
+   
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.mobileNav .navagation2 a, .navagation2 #aboutTabContainer{
+    color:white;
+   height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom:1px solid white;
+    width: 100%;
+    justify-content: center;
+}
+
+.navagation2 a:hover, .navagation2 #aboutTabContainer:hover{
+   background-color: rgba(255,255,255, .5);
+}
+
+#mobileSubdropdown{
+    width: 100%;
+   
+    background-color: rgba(0, 0, 0, 0.5);
+ 
+    transition:.1s;
+  
+}
+
+#mobileSubdropdown a{
+    height: 50px;
+    border:none;
+    height: 0;
+    transition: .1s;
+    visibility: hidden;
+}
+
+#aboutDropdownButton{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*END mobile nav*/
+/*
 #aboutTabContainer{
     height: 100%;
 }
+*/
 
-.navagation > a, .navagation > div > a{
+.navagation a, .navagation #aboutTabContainer{
     display:flex;
     justify-content: center;
     align-items: center;
     padding-right: 20px;
     padding-left:20px;
 
-    height: 100%;
-
+    height: 100%
 }
 
  /*drop down menu*/
 
  #aboutTabContainer:hover .dropdown{
-    display: block;
+    display: block; 
     
 }
 
@@ -137,3 +225,12 @@ nav{
 .dropdown li:hover{
     background-color: rgb(234, 234, 234);
 }   
+
+@media only screen and (min-width: 600px){
+    .navDisplayButton{
+        display:none;
+    }
+    .navagation{
+        display: flex;
+    }
+}
