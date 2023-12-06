@@ -66,7 +66,7 @@ function renderCuisinGrid(){
                 <div class = "itemInfo">
                     <div class = "nameOfItem">${item.name}</div>
                     <div class = "ratingCol">
-                        <div class = "itemRating">${item.rating}<small class = "maxRate">/5</small></div>
+                        <div class = "itemRating">${item.rating.toFixed(1)}<small class = "maxRate">/5</small></div>
                         <small class = "numOfReviews">${item.numOfReviews} reviews</small>
                     </div>
                 </div>

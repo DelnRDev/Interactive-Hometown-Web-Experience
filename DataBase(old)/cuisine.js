@@ -5,7 +5,7 @@ export const ItemDataList = [
         name: "Egg waffle",
         rating: 4.0,
         fileName: "cuisine1.jpg",
-        alt: "This is an image of egg waffle",
+        alt: "",
         numOfReviews: 231,
         recipe: [
             "1 cup all purpose flour (140 g), plus 2 tbsp",
@@ -19,7 +19,7 @@ export const ItemDataList = [
         name: "Egg tart",
         rating: 2.8,
         fileName: "cuisine2.jpg",
-        alt: "This is an image of egg tart",
+        alt: "",
         numOfReviews: 231,
         recipe: [
             "1 1/4 cups all-purpose flour",
@@ -35,7 +35,7 @@ export const ItemDataList = [
         name: "Umami soup noodle",
         rating: 5.0,
         fileName: "cuisine3.jpg",
-        alt: "This is an image of Umami soup noodle ",
+        alt: "",
         numOfReviews: 231,
         recipe: [
             "8 cups of chicken or vegetable broth",
@@ -56,7 +56,7 @@ export const ItemDataList = [
         name: "Beef and egg",
         rating: 1.1,
         fileName: "cuisine4.jpg",
-        alt: "This is an image of beef and egg",
+        alt: "",
         numOfReviews: 231,
         recipe: [
             "1 lb (450g) beef sirloin or flank steak, thinly sliced",
@@ -78,7 +78,7 @@ export const ItemDataList = [
         name: "Rice with shrimp",
         rating: 3.7,
         fileName: "cuisine5.jpg",
-        alt: "This is an image of rice with shrimp",
+        alt: "",
         numOfReviews: 231,
         recipe: [
             "2 cups cooked jasmine rice (preferably cooled or day-old)",
@@ -97,10 +97,10 @@ export const ItemDataList = [
     },
     {
         id: '817fd321-c76e-4f11-989d-1c5028274159',
-        name: "Tomatoes and sliced ice cream",
+        name: "Tomatoes and sliced ice creame ",
         rating: 3.5,
         fileName: "cuisine6.jpg",
-        alt: "This is an image of tomatoes and sliced ice cream",
+        alt: "",
         numOfReviews: 231,
         recipe: [
             "Vanilla ice cream, sliced into rounds",
@@ -116,7 +116,7 @@ export const ItemDataList = [
         name: "Chicken breast cubes",
         rating: 3.5,
         fileName: "cuisine7.jpg",
-        alt: "This is an image of chicken breast cubes",
+        alt: "",
         numOfReviews: 231,
         recipe: [
             "1 lb (about 450g) boneless, skinless chicken breasts, cut into cubes",
@@ -136,7 +136,7 @@ export const ItemDataList = [
         name: "Avocado with salmon",
         rating: 3.5,
         fileName: "cuisine8.jpg",
-        alt: "This is an image of avocado with salmon",
+        alt: "",
         numOfReviews: 231,
         recipe: [
             "1 lb (about 450g) fresh salmon fillets",

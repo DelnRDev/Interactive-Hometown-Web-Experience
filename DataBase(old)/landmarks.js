@@ -4,8 +4,7 @@ export const ItemDataList = [
         name: "Mong kok",
         rating: 4.0,
         fileName: "attraction1.jpg",
-        alt: "This is an image of Mong Kok",
-        details: " bustling neighborhood in the heart of Kowloon, Hong Kong, is a dynamic and vibrant district that encapsulates the energy of the city. Known for its lively atmosphere, diverse street life, and a kaleidoscope of activities, Mong Kok is a microcosm of Hong Kong's cultural and commercial richness.",
+        alt: "",
         numOfReviews: 1290,
         referenceItem: 'Photo by <a href="https://unsplash.com/@priscillaserneo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Priscilla Serneo</a> on <a href="https://unsplash.com/photos/person-walking-on-street-kvCTQkcbWAc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'        
     },
@@ -14,8 +13,7 @@ export const ItemDataList = [
         name: "Hong Kong Disneyland",
         rating: 4.9,
         fileName: "attraction2.jpg",
-        alt: "This is an image of Hong Kong Disneyland",
-        details: "Hong Kong Disneyland is a magical destination that brings the enchantment of Disney to the heart of Asia. Nestled on Lantau Island, this theme park offers a world of imagination, fantasy, and adventure for visitors of all ages.",
+        alt: "",
         numOfReviews: 9122,
         referenceItem: 'Photo by <a href="https://unsplash.com/@jacobdyer?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jacob Dyer</a> on <a href="https://unsplash.com/photos/gray-castle-with-fireworks-during-night-time-photography-q1DrHkWrQDw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
        
@@ -25,8 +23,7 @@ export const ItemDataList = [
         name: "Ocean Park",
         rating: 4.7,
         fileName: "attraction3.jpg",
-        alt: "This is an image of Hong Kong Ocean Park",
-        details: "Ocean Park offers a variety of exhilarating rides for thrill-seekers. The Hair Raiser roller coaster, the Abyss Turbo Drop, and the Mine Train are just a few examples of rides that provide adrenaline-pumping experiences against the backdrop of stunning ocean views.",
+        alt: "",
         numOfReviews: 4238,
         referenceItem: 'Photo by <a href="https://unsplash.com/@mixmedia?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jeremy Lam</a> on <a href="https://unsplash.com/photos/aerial-view-of-city-near-body-of-water-during-daytime-oB7XS_vqja4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
        
@@ -36,8 +33,7 @@ export const ItemDataList = [
         name: "Sai Kung",
         rating: 3.8,
         fileName: "attraction4.jpg",
-        alt: "This is an image of Sai Kung",
-        details: "Sai Kung is a picturesque coastal town in the New Territories of Hong Kong, known for its stunning natural landscapes, clear waters, and vibrant seafood culture.",
+        alt: "",
         numOfReviews: 748,
         referenceItem: 'Photo by <a href="https://unsplash.com/@bcfu?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Beaumont Yun</a> on <a href="https://unsplash.com/photos/a-group-of-people-standing-on-a-dock-next-to-a-body-of-water-a3hMnp2-jBk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
     },
@@ -46,8 +42,7 @@ export const ItemDataList = [
         name: "Repulse Bay",
         rating: 3.5,
         fileName: "attraction5.jpg",
-        alt: "This is an image of Repulse Bay",
-        details: "Repulse Bay is a serene and upscale residential area located on the southern side of Hong Kong Island. Known for its beautiful sandy beach, luxury apartments, and scenic views, Repulse Bay is a popular destination for both locals and visitors seeking a tranquil escape from the urban hustle and bustle.",
+        alt: "",
         numOfReviews: 912,
         referenceItem: '  Photo by <a href="https://unsplash.com/@jcotten?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Joshua J. Cotten</a> on <a href="https://unsplash.com/photos/aerial-photography-of-beach-during-daytime-7cIyLI-IVTE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
        
@@ -57,8 +52,7 @@ export const ItemDataList = [
         name: "Big Wave Bay Beach",
         rating: 4.1,
         fileName: "attraction6.jpg",
-        alt: "This is an image of Big Wave Bay Beach",
-        details: "Big Wave Bay Beach is a popular beach located on the eastern side of Hong Kong Island in Hong Kong. It is known for its scenic beauty, outdoor activities, and, as the name suggests, occasional large waves that attract surfers.",
+        alt: "",
         numOfReviews: 1290,
         referenceItem: 'Photo by <a href="https://unsplash.com/@mmfoto713?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Emily Liang</a> on <a href="https://unsplash.com/photos/man-in-blue-shirt-carrying-blue-surfboard-on-beach-during-daytime-dBD9D6L7FkQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
       
@@ -68,8 +62,7 @@ export const ItemDataList = [
         name: "Avenue of Stars",
         rating: 2.9,
         fileName: "attraction7.jpg",
-        alt: "This is an image of Avenue of Stars",
-        details: "The Avenue of Stars is located along the Tsim Sha Tsui waterfront in Kowloon, Hong Kong. It offers stunning views of the Hong Kong skyline, Victoria Harbour, and the iconic skyline of Hong Kong Island.",
+        alt: "",
         numOfReviews: 891,
         referenceItem: 'Photo by <a href="https://unsplash.com/@exappiah?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Emmanuel Appiah</a> on <a href="https://unsplash.com/photos/city-and-ocean-during-night-bgL5XyCKzaU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
         
@@ -79,8 +72,7 @@ export const ItemDataList = [
         name: "Lan Kwai Fong",
         rating: 4.1,
         fileName: "attraction8.jpg",
-        alt: "This is an image of Lan Kwai Fong",
-        details: "Lan Kwai Fong is a popular and vibrant nightlife district in Central, Hong Kong. It is renowned for its concentration of bars, restaurants, nightclubs, and entertainment venues.",
+        alt: "",
         numOfReviews: 7923,
         referenceItem: ' Photo by <a href="https://unsplash.com/@superbfnds?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Weiye Tan</a> on <a href="https://unsplash.com/photos/a-busy-city-street-at-night-with-people-and-cars-VxCf2RWiTBs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
         
