@@ -19,13 +19,17 @@
 
 .itemContainer::before{
     content: var(--before-content, "about");
-    
+    text-align: center;
+    font-size: 80%;
     position: absolute;
     color:White;
     top:35%;
     left: 50%;
+    width: 80%;
+    line-height: 20px;
+
     z-index: 1;
-    transform: translate(-50%, -35%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
    
    
     border-radius: 10px;
