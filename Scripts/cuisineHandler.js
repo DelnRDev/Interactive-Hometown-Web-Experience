@@ -62,7 +62,7 @@ function renderCuisinGrid(){
 
         let templateBox = `
             <div class = "itemContainer js-itemContainer" data-item-id = "${item.id}">
-                <img class = "itemImage" src = "${PhotosFolderPath}/cuisine${i + 1}.jpg" alt = "">
+                <img class = "itemImage" src = "${PhotosFolderPath}/cuisine${i + 1}.jpg" alt = "${item.alt}">
                 <div class = "itemInfo">
                     <div class = "nameOfItem">${item.name}</div>
                     <div class = "ratingCol">

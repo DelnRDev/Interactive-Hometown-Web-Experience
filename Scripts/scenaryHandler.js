@@ -9,7 +9,7 @@ for(let category of categories){
 
     let template = `
         <div class="img-container" data-category-id = "${category.id}">
-            <img class = "photo" src="${PhotosFolderPath}/${category.fileName}" alt="">
+            <img class = "photo" src="${PhotosFolderPath}/${category.fileName}" alt="${category.alt}">
         </div>
     `;
     

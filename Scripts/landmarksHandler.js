@@ -14,7 +14,7 @@ function renderLandmarksGrid(){
         let item = landmarksData[i];
         let templateBox = `
             <div class = "itemContainer" data-item-id = ${item.id}>
-                <img class = "itemImage" src = "${PhotosFolderPath}/attraction${i + 1}.jpg" alt = "">
+                <img class = "itemImage" src = "${PhotosFolderPath}/attraction${i + 1}.jpg" alt = "${item.alt}">
                 <div class = "itemInfo">
                     <div class = "nameOfItem">${item.name}</div>
                     <div class = "ratingCol">
