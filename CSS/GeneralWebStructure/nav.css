@@ -154,7 +154,11 @@ nav{
 }
 */
 
-.navagation a, .navagation #aboutTabContainer{
+.navagation > div{
+    height: 100%;
+}
+
+.navagation > a, .navagation > div > a{
     display:flex;
     justify-content: center;
     align-items: center;
