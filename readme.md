@@ -24,17 +24,18 @@ This project was developed as part of my web development learning journey and de
 ## Project Structure
 
 ```text
-Web-Dev-Proj/
+Interactive-Hometown-Web-Experience/
 │
 ├── CSS/          # Stylesheets
-├── HTMLs/        # Website pages
-├── Scripts/      # JavaScript files
-├── Photos/       # Images and media assets
 ├── DataBase/     # Project data files
+├── HTMLs/        # Additional pages
+├── Photos/       # Images and media assets
+├── Scripts/      # JavaScript files
 │
-├── .gitignore
+├── index.html    # Homepage / website entry point
 ├── README.md
-└── LICENSE
+├── LICENSE
+└── .gitignore
 ```
 
 ## Learning Objectives
@@ -65,6 +66,9 @@ Users can access additional information through popup windows without leaving th
 
 ## Live Demo
 
+The website entry point is `index.html`.
+
+Visit the deployed version:
 https://delnrdev.github.io/Interactive-Hometown-Web-Experience/
 
 ## Future Improvements
