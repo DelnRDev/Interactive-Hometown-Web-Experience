@@ -63,6 +63,10 @@ A timeline component presents historical or cultural information in an organized
 
 Users can access additional information through popup windows without leaving the current page.
 
+## Live Demo
+
+https://delnrdev.github.io/Interactive-Hometown-Web-Experience/
+
 ## Future Improvements
 
 - Backend integration
