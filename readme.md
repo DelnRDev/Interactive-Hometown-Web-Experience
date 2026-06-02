@@ -1,3 +1,41 @@
+# Interactive Hometown Web Experience
+
+A responsive website designed to showcase my hometown's culture, history, attractions, and local information through an interactive and visually engaging user interface.
+
+This project was developed as part of my web development learning journey and demonstrates frontend design principles, responsive layouts, JavaScript interactivity, and content organization.
+
+## Features
+
+- Responsive navigation bar
+- Interactive timeline section
+- Popup "Read More" information panels
+- Multiple content pages
+- Photo gallery integration
+- Mobile-friendly layout
+- Custom CSS styling
+- JavaScript-powered interactions
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+
+## Project Structure
+
+```text
+Web-Dev-Proj/
+│
+├── CSS/          # Stylesheets
+├── HTMLs/        # Website pages
+├── Scripts/      # JavaScript files
+├── Photos/       # Images and media assets
+├── DataBase/     # Project data files
+│
+├── .gitignore
+├── README.md
+└── LICENSE
+```
 
 ## Learning Objectives
 
